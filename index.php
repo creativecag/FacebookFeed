@@ -1,6 +1,8 @@
 <?php 
 	require_once('FacebookFeed.class.php');
-	$feed = new FacebookFeed('YOUR_FACEBOOK_ID','YOUR_ACCESS_TOKEN'); // FacebookFeed('YOUR_FACEBOOK_ID','YOUR_ACCESS_TOKEN')
+	
+	// Enter your Facebook ID and Access Token below to access your feed.
+	$feed = new FacebookFeed('YOUR_FACEBOOK_ID','YOUR_ACCESS_TOKEN');
 ?>
 
 <!DOCTYPE html>
@@ -15,10 +17,10 @@
 		 * getFeed() accepts only 1 argument: how many posts to return. Default is 10.
 		 * 
 		 */
-		$feed_items = $feed->getFeed('3');
+		$feed_items = $feed->getFeed(5);
 		foreach ($feed_items as $post) {
 			
-			echo '<pre style="background:black; color:white;">';
+			echo '<pre>';
 			print_r($post);
 			echo '</pre>';
 
