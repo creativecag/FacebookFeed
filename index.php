@@ -1,6 +1,6 @@
 <?php 
 	require_once('FacebookFeed.class.php');
-	$feed = new FacebookFeed('1350464034','169322833130874%7C4558344e6ac0b5f484eb463c.1-1350464034%7CIJ72bkzUCknwksDBWYiSzcqZN2Q'); // FacebookFeed('YOUR_FACEBOOK_ID','YOUR_ACCESS_TOKEN')
+	$feed = new FacebookFeed('YOUR_FACEBOOK_ID','YOUR_ACCESS_TOKEN'); // FacebookFeed('YOUR_FACEBOOK_ID','YOUR_ACCESS_TOKEN')
 ?>
 
 <!DOCTYPE html>
